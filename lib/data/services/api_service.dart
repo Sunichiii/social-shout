@@ -5,7 +5,7 @@ class ApiService {
   final String _baseUrl = "https://newsapi.org/v2/top-headlines";
   final String _apiKey = "a778dcab5a09497393e58183d7de68c4";
 
-  Future<List<Map<String, dynamic>>> fetchNewsByCategory(
+  Future<List<Map<String, dynamic>>> fetchSamacharByCategory(
       String category) async {
     try {
       final response = await _dio.get(_baseUrl, queryParameters: {

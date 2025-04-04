@@ -1,11 +1,11 @@
 import 'package:social_shout/data/services/api_service.dart';
 
-class NewsRepository{
+class SamacharRepository{
   final ApiService apiService;
 
-  NewsRepository({required this.apiService});
+  SamacharRepository({required this.apiService});
 
   Future<List<Map<String, dynamic>>> getSamachar(String category){
-    return apiService.fetchNewsByCategory(category);
+    return apiService.fetchSamacharByCategory(category);
   }
 }
